@@ -1,0 +1,26 @@
+# This is a Cargo *workspace*: one repo holding many small crates (one per lesson).
+# They all share a single `target/` build folder, which saves a lot of disk space and
+# compile time. You can run any lesson from its own folder with `cargo run` / `cargo test`.
+
+[workspace]
+resolver = "2"
+members = [
+    "00_setup",
+    "01_hello_cargo",
+    "02_variables_and_types",
+    "03_functions_and_control_flow",
+    "04_ownership",
+    "05_borrowing_and_slices",
+    "06_structs",
+    "07_enums_and_match",
+    "08_collections",
+    "09_error_handling",
+    "10_traits_and_generics",
+    "11_lifetimes",
+    "12_closures_and_iterators",
+    "13_modules",
+    "14_smart_pointers",
+    "15_testing",
+    "16_concurrency",
+    "17_capstone_todo_cli",
+]
